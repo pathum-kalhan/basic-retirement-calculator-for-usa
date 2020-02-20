@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generator App</title>
+    <script src="app.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Quicksand:400,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="main.css">
+
+</head>
+
+<body>
+    <header>
+        <h1>Retirement Calculator for USA 👴👵 🇺🇸</h1>
+
+    </header>
+    <form>
+        <div class="flex-container">
+            <div>
+                <input type="text" name="name" id="name" placeholder="Retiree name">
+            </div>
+            <div>
+                <input type="number" name="age" id="age" placeholder="Age">
+                
+            </div>
+            <div>
+                <input type="text" name="planName" id="planName" placeholder="Plan name">
+            </div>
+            <div>
+                <input type="number" name="cursave" id="cursave" placeholder="Current savings">
+            </div>
+            <div>
+                <input type="number" name="avg" id="cursave" placeholder="Average annual rate of return">
+            </div>
+            <div>
+                <input type="number" name="cursal" id="cursal" placeholder="Current salary (Annual)">
+            </div>
+            <div>
+                <input type="number" name="salcontri" id="salcontri" placeholder="Salary contribution percentage for retirement">
+            </div>
+            <div>
+                <input type="number" name="salIncrease" id="salIncrease" placeholder="Estimated yearly salary increase">
+            </div>
+            <div>
+                <input type="number" name="salIncrease" id="salIncrease" placeholder="number of years to retirement">
+            </div>
+            <div style="text-align: center;">
+
+                <button onclick="processData()" type="button" class="button">Generate 🔥</button>
+            </div>
+            
+
+        </div>
+
+        <!-- <div class="alert">
+            <p>Input validation failed!</p>
+        </div> -->
+    </form>
+    <div id="tbl">
+        <h1>Table</h1>
+      
+        <table id="myTable">
+            <tr>
+                <th>Year</th>
+                <th>Age</th>
+                <th>Plus Value</th>
+                <th>Total Retirement</th>
+            </tr>
+        </table>
+    </div>
+
+</body>
+
+</html>

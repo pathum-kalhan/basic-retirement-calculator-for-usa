@@ -1,0 +1,76 @@
+body{
+    font-family: 'Quicksand', sans-serif;
+}
+
+header{
+  background-color: #3498db;
+  padding: 5px;
+}
+
+table{
+    border-collapse: collapse;
+    width: 100%;
+
+}
+
+ td {
+    border-bottom: 1px solid #ddd;
+    height: 20px;
+    text-align: right;
+  }
+
+  input[type=text], input[type=number] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+  }
+
+  .flex-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    border:3px solid #3498db;
+    border-top: none;
+    padding: 1rem 0;
+  }
+
+  .flex-container div{
+    /* flex-grow: 1; */
+  width: 30%;
+  }
+
+  .alert{
+    background-color: #e74c3c;
+    padding: 1px 10px;
+
+  }
+
+  .alert p {
+    font-size: 1.5em;
+    color: white;
+  }
+
+  .button {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 10px 16px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+  }
+
+  th {
+    background-color: #3498db;
+    color: white;
+    height: 30px;
+    text-align: right;
+  }
+
+  #tbl{
+    border:1px solid grey;
+    margin-top: 15px;
+  }
+  
