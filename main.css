@@ -9,7 +9,8 @@ header{
 
 table{
     border-collapse: collapse;
-    width: 100%;
+    width: 95%;
+    margin: auto;
 
 }
 
@@ -72,5 +73,9 @@ table{
   #tbl{
     border:1px solid grey;
     margin-top: 15px;
+  }
+
+  h1{
+    text-align: center;
   }
   

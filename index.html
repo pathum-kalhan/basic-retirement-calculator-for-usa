@@ -4,8 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Generator App</title>
+    <title>Retirement Generator App</title>
     <script src="app.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
     <link href="https://fonts.googleapis.com/css?family=Quicksand:400,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="main.css">
 
@@ -13,42 +14,42 @@
 
 <body>
     <header>
-        <h1>Retirement Calculator for USA 👴👵 🇺🇸</h1>
+        <h1>Retirement Calculator for USA 👴👵 🗽</h1>
 
     </header>
     <form>
         <div class="flex-container">
             <div>
-                <input type="text" name="name" id="name" placeholder="Retiree name">
+                <input type="text" name="name" id="name" placeholder="Retiree name" value="Pathum Kalhan">
             </div>
             <div>
-                <input type="number" name="age" id="age" placeholder="Age">
+                <input type="number" name="age" id="age" placeholder="Age" value="23">
                 
             </div>
             <div>
-                <input type="text" name="planName" id="planName" placeholder="Plan name">
+                <input type="text" name="planName" id="planName" placeholder="Plan name" value="Blue bird">
             </div>
             <div>
-                <input type="number" name="cursave" id="cursave" placeholder="Current savings">
+                <input type="number" name="cursave" id="curSave" placeholder="Current savings" value="50000">
             </div>
             <div>
-                <input type="number" name="avg" id="cursave" placeholder="Average annual rate of return">
+                <input type="number" name="avg" id="savingGrowth" placeholder="Average annual rate of return" value="11">
             </div>
             <div>
-                <input type="number" name="cursal" id="cursal" placeholder="Current salary (Annual)">
+                <input type="number" name="salary" id="salary" placeholder="Current salary (Annual)" value="70000">
             </div>
             <div>
-                <input type="number" name="salcontri" id="salcontri" placeholder="Salary contribution percentage for retirement">
+                <input type="number" name="salcontri" id="salContribution" placeholder="Salary contribution percentage for retirement" value="2">
             </div>
             <div>
-                <input type="number" name="salIncrease" id="salIncrease" placeholder="Estimated yearly salary increase">
+                <input type="number" name="salIncrease" id="salIncrease" placeholder="Estimated yearly salary increase" value="0.1">
             </div>
             <div>
-                <input type="number" name="salIncrease" id="salIncrease" placeholder="number of years to retirement">
+                <input type="number" name="salIncrease" id="yearToRetire" placeholder="number of years to retirement" value="10">
             </div>
             <div style="text-align: center;">
 
-                <button onclick="processData()" type="button" class="button">Generate 🔥</button>
+                <button onclick='processData()' type="button" class="button">Generate 🔥</button>
             </div>
             
 
@@ -58,6 +59,9 @@
             <p>Input validation failed!</p>
         </div> -->
     </form>
+    <div id="chart">
+    
+    </div>
     <div id="tbl">
         <h1>Table</h1>
       
@@ -65,11 +69,13 @@
             <tr>
                 <th>Year</th>
                 <th>Age</th>
-                <th>Plus Value</th>
-                <th>Total Retirement</th>
+                <th>Salary contribution</th>
+                <th>Total Fund</th>
+                <th>Salary</th>
             </tr>
         </table>
     </div>
+    
 
 </body>
 
