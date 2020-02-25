@@ -1,4 +1,4 @@
-const chartData = [];
+let chartData = [];
 let isCalledBefore = false;
 let chart = null;
 function renderApexChart() {
@@ -192,6 +192,9 @@ async function processData() {
 
 
     const table = document.getElementById('myTable');
+    while (table.rows.length > 1) {
+      table.deleteRow(1);
+    }
 
     // Reverse the array
     tblRows.reverse();
@@ -221,4 +224,27 @@ async function processData() {
   } catch (error) {
 
   }
+}
+
+function resetToDefaults() {
+  document.getElementById('name').value = 'Tharindu';
+
+  document.getElementById('age').value = 23;
+  document.getElementById('planName').value = 'Blue Bird';
+  document.getElementById('curSave').value = 50000;
+  document.getElementById('savingGrowth').value = 11;
+  document.getElementById('salary').value = 70000;
+  document.getElementById('salContribution').value = 2;
+  document.getElementById('salIncrease').value = 0.1;
+  document.getElementById('yearToRetire').value = 10;
+  const tb = document.getElementById('myTable');
+  while (tb.rows.length > 1) {
+    tb.deleteRow(1);
+  }
+  if (chart) {
+    chart.destroy();
+  }
+  chartData = [];
+  isCalledBefore = false;
+  chart = null;
 }
