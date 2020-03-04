@@ -29,7 +29,7 @@ function renderApexChart() {
     if (min === minAge) {
       series.push({
         name: e.planName,
-        data: salaries,
+        data: salaries.reverse(),
       });
     }
     if (minAge < min) {
@@ -39,55 +39,58 @@ function renderApexChart() {
       }
       series.push({
         name: e.planName,
-        data: salaries,
+        data: salaries.reverse(),
       });
     }
   });
 
-  // const options = {
-  //   chart: {
-  //     type: 'line',
-  //   },
-  //   series,
-  //   xaxis: {
-  //     categories,
-  //   },
-  // };
-
   const options = {
     chart: {
-      id: 'vuechart-example',
       type: 'line',
     },
     series,
     xaxis: {
       categories,
-      title: {
-        text: 'Age',
-        offsetX: 0,
-        offsetY: 0,
-        style: {
-          color: 'green',
-          fontSize: '12px',
-          fontFamily: 'Helvetica, Arial, sans-serif',
-          cssClass: 'apexcharts-xaxis-title',
-        },
-      },
-    },
-    yaxis: {
-      title: {
-        text: 'Salary',
-        offsetX: 0,
-        offsetY: 6,
-        style: {
-          color: 'green',
-          fontSize: '12px',
-          fontFamily: 'Helvetica, Arial, sans-serif',
-          cssClass: 'apexcharts-xaxis-title',
-        },
-      },
     },
   };
+
+  // series.reverse();
+  console.log(series);
+
+  // const options = {
+  //   chart: {
+  //     id: 'vuechart-example',
+  //     type: 'line',
+  //   },
+  //   series,
+  //   xaxis: {
+  //     categories,
+  //     title: {
+  //       text: 'Age',
+  //       offsetX: 0,
+  //       offsetY: 0,
+  //       style: {
+  //         color: 'green',
+  //         fontSize: '12px',
+  //         fontFamily: 'Helvetica, Arial, sans-serif',
+  //         cssClass: 'apexcharts-xaxis-title',
+  //       },
+  //     },
+  //   },
+  //   yaxis: {
+  //     title: {
+  //       text: 'Salary',
+  //       offsetX: 0,
+  //       offsetY: 6,
+  //       style: {
+  //         color: 'green',
+  //         fontSize: '12px',
+  //         fontFamily: 'Helvetica, Arial, sans-serif',
+  //         cssClass: 'apexcharts-xaxis-title',
+  //       },
+  //     },
+  //   },
+  // };
 
 
   if (!isCalledBefore) {
