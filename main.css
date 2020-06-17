@@ -1,3 +1,5 @@
+/*Header and body*/
+
 body{
     font-family: 'Quicksand', sans-serif;
 }
@@ -6,6 +8,39 @@ header{
   background-color: #3498db;
   padding: 5px;
 }
+
+/*Form styles*/
+
+.form-group {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  border:3px solid #3498db;
+  border-top: none;
+  padding: 1rem 0;
+}
+
+.form-group > div{
+  flex-basis: 20rem
+}
+
+.form-actions{
+  margin-top: 2rem;
+  text-align: center;
+}
+
+input[type=text], input[type=number] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+}
+
+/*  */
+
+
+
+
 
 table{
     border-collapse: collapse;
@@ -20,26 +55,9 @@ table{
     text-align: right;
   }
 
-  input[type=text], input[type=number] {
-    width: 100%;
-    padding: 12px 20px;
-    margin: 8px 0;
-    box-sizing: border-box;
-  }
+  
 
-  .flex-container {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    border:3px solid #3498db;
-    border-top: none;
-    padding: 1rem 0;
-  }
-
-  .flex-container div{
-    /* flex-grow: 1; */
-  width: 30%;
-  }
+  
 
   .alert{
     background-color: #e74c3c;
@@ -64,15 +82,8 @@ table{
     font-size: 16px;
   }
 
-  .clrBtn {
-    background-color: #e74c3c; /* Green */
-    border: none;
-    color: white;
-    padding: 10px 16px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
+  .button-danger {
+    background-color: #e74c3c;
   }
 
   th {
@@ -91,3 +102,16 @@ table{
     text-align: center;
   }
   
+
+  
+
+  @media(max-width:40rem){
+    .form-group {
+     flex-direction: column;
+     
+    }
+    .form-group > div{
+      flex-basis: auto;
+      margin: 1rem
+    }
+  }

@@ -54,43 +54,7 @@ function renderApexChart() {
     },
   };
 
-  // series.reverse();
-  console.log(series);
-
-  // const options = {
-  //   chart: {
-  //     id: 'vuechart-example',
-  //     type: 'line',
-  //   },
-  //   series,
-  //   xaxis: {
-  //     categories,
-  //     title: {
-  //       text: 'Age',
-  //       offsetX: 0,
-  //       offsetY: 0,
-  //       style: {
-  //         color: 'green',
-  //         fontSize: '12px',
-  //         fontFamily: 'Helvetica, Arial, sans-serif',
-  //         cssClass: 'apexcharts-xaxis-title',
-  //       },
-  //     },
-  //   },
-  //   yaxis: {
-  //     title: {
-  //       text: 'Salary',
-  //       offsetX: 0,
-  //       offsetY: 6,
-  //       style: {
-  //         color: 'green',
-  //         fontSize: '12px',
-  //         fontFamily: 'Helvetica, Arial, sans-serif',
-  //         cssClass: 'apexcharts-xaxis-title',
-  //       },
-  //     },
-  //   },
-  // };
+ 
 
 
   if (!isCalledBefore) {

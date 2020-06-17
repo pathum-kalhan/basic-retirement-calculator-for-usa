@@ -18,7 +18,7 @@
 
     </header>
     <form>
-        <div class="flex-container">
+        <div class="form-group">
             <div>
                 <label for="name">Retiree Name</label>
                 <input type="text" name="name" id="name" placeholder="Retiree name" value="Tharindu">
@@ -26,7 +26,7 @@
             <div>
                 <label for="age">Age</label>
                 <input type="number" name="age" id="age" placeholder="Age" value="23">
-                
+
             </div>
             <div>
                 <label for="planName">Plan Name</label>
@@ -38,7 +38,8 @@
             </div>
             <div>
                 <label for="savingGrowth">Average annual rate of return</label>
-                <input type="number" name="avg" id="savingGrowth" placeholder="Average annual rate of return" value="11">
+                <input type="number" name="avg" id="savingGrowth" placeholder="Average annual rate of return"
+                    value="11">
             </div>
             <div>
                 <label for="Current salary (Annual)">Current salary (Annual)</label>
@@ -46,23 +47,26 @@
             </div>
             <div>
                 <label for="salContribution">Salary contribution percentage for retirement</label>
-                <input type="number" name="salcontri" id="salContribution" placeholder="Salary contribution percentage for retirement" value="2">
+                <input type="number" name="salcontri" id="salContribution"
+                    placeholder="Salary contribution percentage for retirement" value="2">
             </div>
             <div>
                 <label for="salIncrease">Estimated yearly salary increase</label>
-                <input type="number" name="salIncrease" id="salIncrease" placeholder="Estimated yearly salary increase" value="5">
+                <input type="number" name="salIncrease" id="salIncrease" placeholder="Estimated yearly salary increase"
+                    value="5">
             </div>
             <div>
                 <label for="yearToRetire">Number of years to retirement</label>
-                <input type="number" name="salIncrease" id="yearToRetire" placeholder="Number of years to retirement" value="10">
+                <input type="number" name="salIncrease" id="yearToRetire" placeholder="Number of years to retirement"
+                    value="10">
             </div>
-            <div style="text-align: center;">
 
-                <button onclick='processData()' type="button" class="button">Generate 🔥</button>
-                <button type="button" class="clrBtn" onclick='resetToDefaults()'>Clear table</button>
 
-            </div>
-            
+        </div>
+        <div class="form-actions">
+
+            <button onclick='processData()' type="button" class="button">Generate 🔥</button>
+            <button type="button" class="button button-danger" onclick='resetToDefaults()'>Clear table</button>
 
         </div>
 
@@ -70,11 +74,11 @@
             <p>Input validation failed!</p>
         </div>
     </form>
-    
+
     <div id="tbl">
 
         <h1>Table</h1>
-      
+
         <table id="myTable">
             <tr>
                 <th>Year</th>
@@ -86,9 +90,9 @@
         </table>
     </div>
     <div id="chart">
-    
+
     </div>
-    
+
 
 </body>
 
